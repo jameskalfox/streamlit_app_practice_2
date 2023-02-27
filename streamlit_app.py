@@ -13,4 +13,4 @@ streamlit.write(df)
 
 streamlit.header('Zena\'s Amazing Athleisure Catalog')
 
-streamlit.selectbox('Pick a sweatsuit colour or style:', list(my_catalog))
+streamlit.selectbox('Pick a sweatsuit colour or style:', list(df))
