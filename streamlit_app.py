@@ -20,5 +20,6 @@ streamlit.write('Our ' + option + ' sweatsuit')
 
 my_cur.execute(
     'select direct_url from catalog_for_website where color_or_style = \'' + option + '\'')
+df2 = my_cur.fetchone()
 
 streamlit.image(df2[0], width=400)
