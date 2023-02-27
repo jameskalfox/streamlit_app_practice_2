@@ -9,6 +9,7 @@ my_cur.execute('select color_or_style from catalog_for_website')
 my_catalog = my_cur.fetchall()
 
 df = pandas.dataframe(my_catalog)
+streamlit.write(df)
 streamlit.header('Zena\'s Amazing Athleisure Catalog')
 
 streamlit.selectbox('Pick a sweatsuit colour or style:', list(my_catalog))
